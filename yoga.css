@@ -81,3 +81,95 @@ main{
 header, nav, main, footer { 
     display: block;
 }
+#mobile {
+    display: none;
+}
+#display {
+    display: inline;
+}
+@media only screen and (max-width: 1024px) {
+    body { 
+        margin: 0;
+        padding: 0;
+    }
+    #wrapper {
+        width: 0;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        padding-top: 1px;
+    }
+    nav {
+        float: none;
+        width: auto;
+        padding-left: 2em;
+    }
+    nav a {
+        padding: 0.2em;
+        margin-left: 0.3em;
+        float: left;
+        width: 23%;
+    }
+    main {
+        padding: 2.5em 1em;
+        margin: 0;
+        font-size: 90%;
+        clear: both; 
+    }
+    #hero img {
+        width: 100%;
+        height: auto;
+    }
+    h2, h3, p, dl { 
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    main ul {
+        margin-left: 2em;
+    }
+    .floatleft { 
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+    .clear {
+        padding-left: 2em;
+    }
+}
+@media only all and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        width: 85%;
+        text-align: center;
+    }
+    nav a {
+        padding: 0.5em;
+        width: 45%;
+        float: left;
+        min-width: 6em;
+        margin-left: 0.5em;
+    }
+    main {
+        padding-top: 0;
+    }
+    .floatleft {
+        float: none;
+        display: none;
+    }
+    #hero {
+        display: none;
+    }
+    footer {
+        padding: 0.5em;
+        margin: 0;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+}
