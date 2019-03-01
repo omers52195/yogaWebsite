@@ -173,3 +173,24 @@ header, nav, main, footer {
         display: none;
     }
 }
+
+/* Table styles */
+table {
+    width: 60%;
+    border: 1px solid #3F2860;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 1em;   
+}
+td, th {
+    padding: 5px;
+    border: 1px solid #3F2860;
+}
+tr:nth-of-type(even){
+    background: #9BC1C2;
+}
+caption {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
